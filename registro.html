@@ -1,0 +1,178 @@
+<html>
+
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="Styles/estilos.css">
+        <script src="https://kit.fontawesome.com/5f87b50c6b.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="/Scripts/registro.js"></script>
+
+
+    </head>
+    <body>
+        <div class="sidenav">
+            <a id="buttonCliente" href="#"><i class="fas fa-user"></i>Cliente</a>
+            <a id="buttonEmpresa" href="#"><i class="fas fa-users"></i>Empresa</a>
+        </div>
+
+        <div class="registro1">
+            <p id="titulo">Registro de Cliente</p>
+        </div>
+
+        <hr class="line">
+
+        <div id="registro1" class="registro1">
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" class="form-control" id="nombre">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="apellidoP">Apellido paterno:</label>
+                        <input type="text" class="form-control" id="apellidoP">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="apellidoM">Apellido materno:</label>
+                        <input type="text" class="form-control" id="apellidoM">
+                    </div>
+                </div>
+
+                <label for="nac">Fecha de nacimiento:</label>
+                <div id="nac" class="form-row">
+                    <div class="form-group col-md-1">
+                        <select id="diaNac" class="form-control">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <select id="mesNac" class="form-control">
+                            <option>Enero</option>
+                            <option>Febrero</option>
+                            <option>Marzo</option>
+                            <option>Abril</option>
+                            <option>Mayo</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-1">
+                        <select id="yearNac" class="form-control">
+                            <option>2020</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <label for="imagen">Agregar imagen:</label>
+                        <input id="imagen" class="form-control" type="file">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="telefono">Telefono:</label>
+                        <input id="telefono" class="form-control" type="text">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="correo">Correo electrónico:</label>
+                        <input id="correo" type="text" class="form-control">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="password">Contraseña:</label>
+                        <input id="password" type="password" class="form-control">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-8">
+
+                    </div>
+                    <div class="form-group col-md-2">
+                        <button type="submit" class="btn btn-success">Registrar</button>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <a class="btn btn-danger" href="index.html">Volver</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div id="registro2" class="registro2" style="display: none;">
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="nombreE">Nombre:</label>
+                        <input type="text" id="nombreE" class="form-control">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="rfc">RFC:</label>
+                        <input type="text" id="rfc" class="form-control">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="imagenE">Agregar imagen:</label>
+                        <input type="file" id="imagenE" class="form-control">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="categoria">Categoría:</label>
+                        <select id="categoria" class="form-control">
+                            <option>Floreria</option>
+                            <option>Salon de eventos</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="telefonoE">Telefono:</label>
+                        <input type="text" id="telefonoE" class="form-control">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label>Si cuenta con una página web de su empresa puede agregarla</label>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-3">
+
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label>URL de página:</label>
+                        <input type="text" id="url" class="form-control">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="correoE">Correo electrónico:</label>
+                        <input id="correoE" type="text" class="form-control">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="passwordE">Contraseña:</label>
+                        <input id="passwordE" type="password" class="form-control">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-8">
+
+                    </div>
+                    <div class="form-group col-md-2">
+                        <button type="submit" class="btn btn-success">Registrar</button>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <a class="btn btn-danger" href="index.html">Volver</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </body>
+</html>

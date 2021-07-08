@@ -1,0 +1,110 @@
+<html>
+
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="Styles/estilos.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/10.3.5/sweetalert2.min.css" integrity="sha512-NU255TKQ55xzDS6UHQgO9HQ4jVWoAEGG/lh2Vme0E2ymREox7e8qwIfn6BFem8lbahhU9E2IQrHZlFAxtKWH2Q==" crossorigin="anonymous" />
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+        <script src="https://kit.fontawesome.com/5f87b50c6b.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="Scripts/registro.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/10.3.5/sweetalert2.min.js" integrity="sha512-Wv8c8chIOY6Gt4Fesj+VYlEt+Qd+GIIKcoZGtPPh7l6Edc0QZlJoYQGVoQIBDDAFSzRNbJfnS9ml47BGRNdNiQ==" crossorigin="anonymous"></script>
+
+
+    </head>
+    <body>
+        
+        <footer id="footer-cont4"></footer>
+      
+        <div class="contenido">
+
+        <h5 id="adminp" style="font-family: Ubuntu;" class="adminp">Administrar Productos</h5>
+
+        <hr class="line2">
+
+       
+            <input type="submit" class="buttonvolver" value = "← Volver">
+        
+    <div id="products" class="products">
+        <form>
+        
+            <div class="form-row" id="campos1">
+                <div class="form-group col-md-5">
+                    <label for="producto" class="labelForm">Producto:</label>
+                    <input type="text" id = "producto" class="form-control" id="producto">
+                </div>
+                <div class="form-group col-md-5">
+                    <label for="Descripción" id = "desc" class="labelForm">Descripción:</label>
+                    <input type="text" id="desc" class="form-control">
+                </div>
+            </div>
+    
+            <div class="form-row" id = "campos2">
+                <div class="form-group col-md-5">
+                    <label for="precio" class="labelForm">Precio:</label>
+                    <input type="text" id="precio" class="form-control">    
+                </div>
+                <div class="form-group col-md-5">
+                    <label for="imagenE" id="imageninput2" class="labelForm">Imagen:</label>
+                    <input type="file" id="imageninput2" class="form-control">   
+                </div>
+            </div>
+        </div>
+
+            <button type="submit" id="guardar_admin" class="btn botonGuardar2">Guardar cambios</button>
+            
+        <h6 id="prodact">Productos actuales</h5>
+        <table cellspacing="0" cellpadding="" class="admin_productos">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Descripción</th>
+                    <th>Precio</th>
+                    <th>Imagen</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tr>
+                <td>Arreglo de Rosas</td>
+                <td>15 rosas con base</td>
+                <td>$1,000</td>
+                <td><img width="100px" height="100px" valign="middle" src="Styles/images/rosas2.jpg" /></td>
+                <td><button type="submit" id="boton_ap_edit"class="boton_ap_edit"><i class="fas fa-edit"></i> </button></td>
+                <td><button type="submit" id="boton_ap_delete" class="boton_ap_delete"><i class="fas fa-trash-alt"></i> </button></td>
+            </tr>
+
+            <tr>
+                <td>Ramo de Girasoles</td>
+                <td>5 girasoles con base negra de madera</td>
+                <td>$700</td>
+                <td><img width="100px" height="100px" valign="middle" src="Styles/images/rosas.jpg" /></td>
+                <td><button type="submit" id="boton_ap_edit"class="boton_ap_edit"><i class="fas fa-edit"></i> </button></td>
+                <td><button type="submit" id="boton_ap_delete" class="boton_ap_delete"><i class="fas fa-trash-alt"></i> </button></td>
+            </tr>
+
+            <tr>
+                <td>Ramo de Petunias</td>
+                <td>10 petunias en ramo</td>
+                <td>$800</td>
+                <td><img width="100px" height="100px" valign="middle" src="Styles/images/girasoles.jpg" /></td>
+                <td><button type="submit" id="boton_ap_edit"class="boton_ap_edit"><i class="fas fa-edit"></i> </button></td>
+                <td><button type="submit" id="boton_ap_delete" class="boton_ap_delete"><i class="fas fa-trash-alt"></i> </button></td>
+            </tr>
+
+            <tr>
+                <td>Arreglo de varias flores</td>
+                <td>5 tipos de flores diferentes</td>
+                <td>$1,500</td>
+                <td><img width="100px" height="100px" valign="middle" src="Styles/images/giraoles.jpg" /></td>
+                <td><button type="submit" id="boton_ap_edit"class="boton_ap_edit"><i class="fas fa-edit"></i> </button></td>
+                <td><button type="submit" id="boton_ap_delete" class="boton_ap_delete"><i class="fas fa-trash-alt"></i> </button></td>
+            </tr>
+
+        </table>
+    </div>
+</form>
+</div>
+
+    </body>
+</html>

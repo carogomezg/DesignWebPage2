@@ -1,0 +1,109 @@
+<html>
+
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="Styles/estilos.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/10.3.5/sweetalert2.min.css" integrity="sha512-NU255TKQ55xzDS6UHQgO9HQ4jVWoAEGG/lh2Vme0E2ymREox7e8qwIfn6BFem8lbahhU9E2IQrHZlFAxtKWH2Q==" crossorigin="anonymous" />
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+        <script src="https://kit.fontawesome.com/5f87b50c6b.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="Scripts/registro.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/10.3.5/sweetalert2.min.js" integrity="sha512-Wv8c8chIOY6Gt4Fesj+VYlEt+Qd+GIIKcoZGtPPh7l6Edc0QZlJoYQGVoQIBDDAFSzRNbJfnS9ml47BGRNdNiQ==" crossorigin="anonymous"></script>
+
+
+    </head>
+    <body>
+        <div class="sidenav">
+            <footer id="footer-cont2"></footer>
+        </div>
+
+        <div class="registro1">
+            <p id="titulo2" class="titulo2">Mi Perfil</p>
+        </div>
+
+        <hr class="line">
+
+        <div id="registro2" class="registro2 activo">
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-3">
+                        <label for="nombre" class="labelForm">Nombre:</label>
+                        <input type="text" class="form-control" id="nombre">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="rfc" class="labelForm">RFC:</label>
+                        <input type="text" id="rfc" class="form-control">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="imagenE" class="labelForm">Imagen:</label>
+                        <input type="file" id="imageninput" class="form-control">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-3">
+                        <label for="categoria" class="labelForm">Categoría:</label>
+                        <select id="categoria" class="form-control">
+                            <option>Floreria</option>
+                            <option>Salon de eventos</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="telefonoE" class="labelForm">Teléfono:</label>
+                        <input type="text" id="telefonoE" class="form-control">
+                    </div>
+                    <div class="form-group col-md-5">
+                            <label for="direccion">Dirección:</label>
+                            <input id="direccion" class="form-control" type="text">
+                    </div>
+                </div>
+
+                
+                <label for="divURL" class="labelForm">Si cuenta con una página web de su empresa puede agregarla</label>
+                <div id="divURL" class="form-row">
+                    <div class="form-group col-md-1">
+
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label class="labelForm">URL de página:</label>
+                        <input type="text" id="url" class="form-control">
+                    </div>
+                </div>
+
+            
+
+                <div class="form-row">
+                    <div class="col-md-4">
+                        <label for="correoE" class="labelForm">Correo electrónico:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" style="background-color: white;"><i class="fas fa-envelope" style="color: grey;"></i></span>
+                              </div>
+                            <input id="correoE" type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="passwordE" class="labelForm">Contraseña:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" style="background-color: white;"><i class="fas fa-lock" style="color: grey;"></i></span>
+                              </div>
+                            <input id="passwordE" type="password" class="form-control">
+                        </div>
+                    </div>
+                </div>
+               
+
+                <div class="float-md-right botones">
+                    <button type="submit" class="btn botonEditar">Editar</button>
+                    <button type="submit" class="btn botonGuardar">Guardar cambios</button>
+                    <button type="submit" class="btn botonEliminar">Eliminar cuenta</button>
+                    <button type="submit" class="btn botonVolver">Volver</button>
+                  
+                </div>
+            </form>
+        </div>
+
+
+    </body>
+</html>
